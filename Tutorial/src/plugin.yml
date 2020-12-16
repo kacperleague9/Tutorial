@@ -1,0 +1,5 @@
+name: Tutorial
+author: Kaspian
+version: 1.0-Snapshot
+main: me.kaspian.Tutorial.Tutorial
+description: A plugin made with tutorial :).
