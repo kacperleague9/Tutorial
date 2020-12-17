@@ -4,6 +4,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import me.kaspian.Tutorial.Events.InteractEvent;
 import me.kaspian.Tutorial.Events.MoveEvent;
+import me.kaspian.Tutorial.Events.BlockEvent;
 import net.md_5.bungee.api.ChatColor;
 
 public class Tutorial extends JavaPlugin {
@@ -12,6 +13,7 @@ public class Tutorial extends JavaPlugin {
 		getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "\n\nHello world!\n\n");
 		getServer().getPluginManager().registerEvents(new MoveEvent(), this);
 		getServer().getPluginManager().registerEvents(new InteractEvent(), this);
+		getServer().getPluginManager().registerEvents(new BlockEvent(), this);
 	}
 	
 	public void onDisable( ) {
